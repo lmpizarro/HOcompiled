@@ -9,3 +9,11 @@
 0000000000000000 d val3
 0000000000000004 D val4
 ```
+
++ add_abs texto ejecutable no visible 
++ main    texto ejecutable visible
++ printf  función indefinida a determinar linkeando con otro objeto
++ val1    solo lectura no visible
++ val2    solo lectura  visible
++ val3    dato   no visible
++ val4    dato  visible
