@@ -9,7 +9,7 @@ SOURCE_C = $(wildcard *.c)
 OBJECTS_F = $(patsubst %.f90, %_f90.o, $(SOURCE_F))
 OBJECTS_C = $(patsubst %.c, %_c.o, $(SOURCE_C))
 
-EXECUTABLE = f-main.e
+EXECUTABLE = c-main.e
 
 default: help
 
@@ -38,4 +38,4 @@ all: objects executable
 	$(LD) $^ -o $@
 
 clean:
-	rm -rfv $(OBJECTS_F) $(EXECUTABLE) $(OBJECTS_F) 
+	rm -rfv $(OBJECTS_F) $(EXECUTABLE) $(OBJECTS_C) 
